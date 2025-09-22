@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int check_odd_even(int number){
+long long int check_odd_even(long long int number){
     if(number%2==0){
         cout<<number<<" ";
         number=number/2;
@@ -24,8 +24,13 @@ int check_odd_even(int number){
     }
 }
 int main(){
-    int num_to_check;
+    long long int num_to_check,result;
     cin>>num_to_check;
-    int result = check_odd_even(num_to_check);
+    if(num_to_check==1){
+        result=1;
+    }
+    else{
+         result = check_odd_even(num_to_check);
+    }
     cout<<result<<endl;
 }
